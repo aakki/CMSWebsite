@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "Admin";
+}
+
+<div class="admin-header">
+    <h1>Admin Panel</h1>
+    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse p-4">
+        <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+                <a class="nav-link text-dark"
+                   asp-controller="Admin" asp-action="AddOrEdit" asp-route-slug="Home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark"
+                   asp-controller="Admin" asp-action="ManageCMS">Manage CMS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark"
+                   asp-controller="Admin" asp-action="AddOrEdit" asp-route-slug="AboutMe">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark"
+                   asp-controller="Admin" asp-action="AddOrEdit" asp-route-slug="Profile">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark"
+                   asp-controller="Admin" asp-action="AddOrEdit" asp-route-slug="Contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark"
+                   asp-controller="Admin" asp-action="AddOrEdit" asp-route-slug="PrivacyPolicy">Privacy Policy</a>
+            </li>
+        </ul>
+    </div>
+</div>
